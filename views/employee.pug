@@ -2,11 +2,11 @@ extends layout
 
 block content
   h1= title
-  - let employee=[{employee_Name:"Richards Brooke",employee_age:"20",employee_salary:"1000"},{employee_Name:"James Bond",employee_age:"25",employee_salary:"2000"},{employee_Name:"Edward Collen",employee_age:"30",employee_salary:"3000"}]
+  - let employees=[{employee_Name:"Richards Brooke",employee_age:"20",employee_salary:"1000"},{employee_Name:"James Bond",employee_age:"25",employee_salary:"2000"},{employee_Name:"Edward Collen",employee_age:"30",employee_salary:"3000"}]
     div(class="container-fluid mt-3")
     div(class="row")
-        each employee,index in employee
-            div(class="col-sm-2 bg-success m-1 p-3" ) #{employee.employee_Name} - #{employee.employee_age} - #{employee.employee_salary}
+        each employee,index in employees
+            div(class="col-sm-2 bg-danger m-1 p-3" ) #{employee.employee_Name} - #{employee.employee_age} - #{employee.employee_salary}
 
     
         
